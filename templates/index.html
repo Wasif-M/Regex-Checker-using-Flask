@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Regex Checker</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+  </head>
+  <body>
+    <div>
+      <h1>Regex Checker</h1>
+      <form method="post" action="/check_regex">
+        <label for="regex">Regular Expression:</label>
+        <input type="text" name="regex" id="regex"><br><br>
+        <label for="text">Text:</label>
+        <input type="text" name="text" id="text"><br><br>
+        <input type="submit" value="Check">
+      </form>
+    </div>
+  </body>
+</html>
